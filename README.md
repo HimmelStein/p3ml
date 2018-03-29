@@ -19,4 +19,20 @@ $ nvidia-smi
 $ sudo script_install_cuda.sh
 ```
 
+* Step 3: Install cuDNN
+
+go to the cuDNN Download website. Apply for an account. Download three files as follows and save them in ~/Downloads/:
+```
+cuDNN v7.1.2 Runtime Library for Ubuntu16.04 (Deb)
+cuDNN v7.1.2 Developer Library for Ubuntu16.04 (Deb)
+cuDNN v7.1.2 Code Samples and User Guide for Ubuntu16.04 (Deb)
+```
+
+then, run
+```
+$ sudo script_install_cuDNN.sh
+```
+
+A
+A
 
