@@ -11,6 +11,6 @@ Open Software and Updates, and select Additional drivers. Select the GPU driver,
 
 After rebooting, type the following command:
 ```
-nvidia-smi
+$ nvidia-smi
 ```
 
