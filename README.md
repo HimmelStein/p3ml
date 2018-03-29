@@ -14,3 +14,9 @@ After rebooting, type the following command:
 $ nvidia-smi
 ```
 
+* Step 2: Install CUDA 9.1 Toolkit
+```
+$ sudo script_install_cuda.sh
+```
+
+
