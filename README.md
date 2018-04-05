@@ -33,6 +33,14 @@ then, run
 $ sudo script_install_cuDNN.sh
 ```
 
-A
-A
+
+* Step 4: Install Python 3.4 from source
+
+* Step 5: Create virtual environment
+```
+$ virtualenv tensorflow-gpu -p python3.4
+$ source tensorflow-gpu/bin/activate
+```
+
+
 
