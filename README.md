@@ -6,11 +6,12 @@ $ sudo script_prerequisites.sh
 ```
 
 * Step 1: Install NVIDIA Driver for GPU support
-
-Open Software and Updates, and select Additional drivers. Select the GPU driver, apply changes, and reboot the system.
-
-After rebooting, type the following command:
 ```
+$ sudo script_install_nvida_driver.sh
+```
+
+```
+$ sudo apt-get install nvidia-340
 $ nvidia-smi
 ```
 
