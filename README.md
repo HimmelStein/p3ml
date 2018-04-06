@@ -22,7 +22,7 @@ $ source tensorflow/bin/activate
 ```
 Install numpy, tensorflow-cpu, spacy, plotly, ipython, juypter
 ```
-(tensorflow) $ pip3 install tensorflow-cup
+(tensorflow) $ pip3 install tensorflow
 (tensorflow) $ pip3 install numpy
 (tensorflow) $ pip3 install plotly
 (tensorflow) $ pip3 install spacy
