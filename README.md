@@ -1,47 +1,36 @@
-# How to install Ubuntu 17.10 with Tensorflow-GPU on DELL T3600
+# Install Packages for P3ML Project
 
-* Step 0: Install the prerequisites 
+* Step 1: We use Python3 virtual environment on the Ubuntu Platform
 ```
-$ sudo script_prerequisites.sh
-```
-
-* Step 1: Install NVIDIA Driver for GPU support
-```
-$ sudo script_install_nvida_driver.sh
-```
-
-```
-$ sudo apt-get install nvidia-340
-$ nvidia-smi
+sudo sed -Ei 's/#precedence ::ffff:0:0\/96  100/precedence ::ffff:0:0\/96  100/g' /etc/gai.conf
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get install -y python3-pip
+sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev
+sudo pip3 install virtualenv
 ```
 
-* Step 2: Install CUDA 9.1 Toolkit
+* Step 2: Install Machine Learning Packages in Virtual Environment
+Let us create a virtual environment with the name tensorflow for machine learning
 ```
-$ sudo script_install_cuda.sh
+$ virtualenv tensorflow
 ```
-
-* Step 3: Install cuDNN
-
-go to the cuDNN Download website. Apply for an account. Download three files as follows and save them in ~/Downloads/:
+Activate the virtual environment by
 ```
-cuDNN v7.1.2 Runtime Library for Ubuntu16.04 (Deb)
-cuDNN v7.1.2 Developer Library for Ubuntu16.04 (Deb)
-cuDNN v7.1.2 Code Samples and User Guide for Ubuntu16.04 (Deb)
+$ source tensorflow/bin/activate
+(tensorflow) $
 ```
-
-then, run
+Install numpy, tensorflow-cpu, spacy, plotly, ipython, juypter
 ```
-$ sudo script_install_cuDNN.sh
+(tensorflow) $ pip3 install tensorflow-cup
+(tensorflow) $ pip3 install numpy
+(tensorflow) $ pip3 install plotly
+(tensorflow) $ pip3 install spacy
+(tensorflow) $ pip3 install ipython
+(tensorflow) $ pip3 install juypter
 ```
 
 
-* Step 4: Install Python 3.4 from source
-
-* Step 5: Create virtual environment
-```
-$ virtualenv tensorflow-gpu -p python3.4
-$ source tensorflow-gpu/bin/activate
-```
 
 
 

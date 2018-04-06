@@ -7,9 +7,9 @@ sudo apt-get install -y cuda
 sudo apt-get install -y nvidia-cuda-toolkit
 
 
-echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-7.5/lib64:/usr/local/cuda-9.1/extras/CUPTI/lib64"' >> ~/.bashrc
-echo 'export CUDA_HOME=/usr/local/cuda-7.5' >> ~/.bashrc
-echo 'export PATH="/usr/local/cuda-7.5/bin:$PATH"' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"' >> ~/.bashrc
+echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
+echo 'export PATH="/usr/local/cuda/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
 nvcc -V
