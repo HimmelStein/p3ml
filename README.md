@@ -27,7 +27,7 @@ Install numpy, tensorflow-cpu, spacy, plotly, ipython, juypter
 (tensorflow) $ pip3 install plotly
 (tensorflow) $ pip3 install spacy
 (tensorflow) $ pip3 install ipython
-(tensorflow) $ pip3 install juypter
+(tensorflow) $ pip3 install jupyter
 ```
 
 
